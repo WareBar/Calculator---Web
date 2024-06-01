@@ -1,0 +1,161 @@
+body{
+    background: radial-gradient(circle at -4% -12.9%, rgb(74, 98, 110) 0.3%, rgb(30, 33, 48) 90.2%);
+    height: 96vh;
+    width: 95vw;
+    
+}
+
+
+
+.calculator{
+    background-color:#1B1919;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-style:solid;
+    border-color: whitesmoke;
+    box-shadow: 0 0 10px black;
+    border-width: 2px;
+
+}
+
+
+
+#toggle{
+    border-radius: 25px;
+}
+
+#toggle:hover{
+    background-color: #1B1919;
+    color: white;
+    transition: 0.5s;
+}
+
+#toggle:active{
+    background-color: #545454;
+    transition: .5s;
+}
+
+
+.expression{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #1B1919;
+    color: antiquewhite;
+    height: 80px;
+}
+
+
+.expression>*{
+    font-size: 15px;
+}
+
+
+
+#result{
+    width: 326px;
+    line-height: 40px;
+    text-align: right;
+    font-size: 28px;
+    background-color:#545454;
+    color: white;
+    margin-bottom: 10px;
+    border-style: none;
+    border-radius: 7px;
+}
+
+
+
+.btn{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+
+
+.btn:hover{
+    background-color: #545454;
+    color: #1B1919;
+
+    box-shadow: 0 0 10px black;
+    transition: .4s;
+
+
+}
+
+.operator{
+    background-color: #3F51B5;
+    color: black;
+}
+.operator:hover{
+    background-color:blueviolet;
+    color: black;
+
+    box-shadow: 0 0 10px #3F51B5;
+    transition: 1s;
+
+
+}
+
+
+.btn:active, .operator:active{
+    color: white;
+}
+
+
+
+.zero{
+    width: 165px;
+}
+
+
+@media screen and (max-width:414px) {
+
+
+    .calculator{
+        padding: 5px;
+        border-width: 1px;
+    }
+
+
+    .expression{
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 60px;
+
+    }
+
+    .expression>*{
+        font-size: 12px;
+    }
+
+    #result{
+        width: 268px;
+        line-height:20px;
+        font-size: 22px;
+    }
+
+    .btn{
+        width: 65px;
+        height: 65px;
+        font-size: 15px;
+    }
+
+
+    .zero{
+        width: 134.5px;
+    }
+
+}

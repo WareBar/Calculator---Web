@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
+</head>
+<body>
+
+
+    <article class="calculator">
+
+        <section class="display">
+
+            <button id="toggle" onclick="AppMode()"><i class="fa-solid fa-sun"></i></button>
+
+            <div class="expression">
+                <p id="chosenOperator"></p>
+
+                <div class="numbers">
+                    <h2 id="firstNum"></h2>
+                    <!-- <br> -->
+                    <h2 id="secondNum"></h2>
+                </div>
+            </div>
+
+            <input type="text" id="result" readonly>
+
+
+        </section>
+
+
+
+        <section class="num-btn">
+
+            <input type="button" class="btn" value="%" onclick="Operation('%')">
+            <input type="button" class="btn" value="C" onclick="clearInput()">
+            <button class="btn" onclick="remove()">
+                <i class="fa-solid fa-delete-left"></i>
+            </button>
+            <button class="btn operator" onclick="Operation('/')">
+                <i class="fa-solid fa-divide"></i>
+            </button>
+
+            <br>
+
+            <input type="button" class="btn" value="7" onclick="appendNum(7)">
+            <input type="button" class="btn" value="8" onclick="appendNum(8)">
+            <input type="button" class="btn" value="9" onclick="appendNum(9)">
+            <button class="btn operator" onclick="Operation('*')">
+                <i class="fa-solid fa-xmark"></i>
+            </button>    
+
+            <br>
+
+            <input type="button" class="btn" value="4" onclick="appendNum(4)">
+            <input type="button" class="btn" value="5" onclick="appendNum(5)">
+            <input type="button" class="btn" value="6" onclick="appendNum(6)">
+            <button class="btn operator" onclick="Operation('-')">
+                <i class="fa-solid fa-minus"></i>
+            </button>  
+
+            <br>
+
+            <input type="button" class="btn" value="1" onclick="appendNum(1)">
+            <input type="button" class="btn" value="2" onclick="appendNum(2)">
+            <input type="button" class="btn" value="3" onclick="appendNum(3)">
+            
+            <button class="btn operator" onclick="Operation('+')">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+
+            <br>
+
+            <input type="button" class="btn zero" value="0" onclick="appendNum(0)">
+            <input type="button" class="btn" value="." onclick="appendNum('.')">
+
+            <button class="btn operator" onclick="calculate()">
+                <i class="fa-solid fa-equals"></i>
+            </button>
+
+            
+
+
+
+        </section>
+
+
+    </article>
+
+    
+</body>
+</html>
