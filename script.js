@@ -52,9 +52,11 @@ function clearInput(){
 }
 
 
+let indi = 0;
 
 function AppMode(){
-
+    
+    // kinapos na po dito sir lapit na po ng due date
     if (indi % 2 == 0){
         document.querySelector('.calculator').style.backgroundColor = 'whitesmoke';
         document.querySelector('.expression').style.backgroundColor = 'whitesmoke';
@@ -70,4 +72,5 @@ function AppMode(){
     }
 
     indi += 1;
+
 }
