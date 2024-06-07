@@ -54,6 +54,20 @@ function clearInput(){
 
 
 function AppMode(){
-    1+1;
-    // kinapos na po dito sir lapit na po ng due date
+
+    if (indi % 2 == 0){
+        document.querySelector('.calculator').style.backgroundColor = 'whitesmoke';
+        document.querySelector('.expression').style.backgroundColor = 'whitesmoke';
+        document.querySelector('.calculator').style.borderColor = 'wheat';
+        document.querySelector('#result').style.Color = 'grey';
+        
+    }
+
+    else{
+        document.querySelector('.calculator').style.backgroundColor = '#1B1919';
+        document.querySelector('.expression').style.backgroundColor = '#1B1919';
+        document.querySelector('.calculator').style.borderColor = 'whitesmoke';      
+    }
+
+    indi += 1;
 }
