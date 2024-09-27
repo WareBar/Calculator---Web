@@ -57,7 +57,7 @@ let indi = 0;
 function AppMode(){
     
     // kinapos na po dito sir lapit na po ng due date
-    if (indi % 2 == 0){
+    if (indi % 2 === 0){
         // LIGHT MODE
         document.querySelector('.calculator').style.backgroundColor = 'whitesmoke';
         document.querySelector('.expression').style.backgroundColor = 'whitesmoke';
