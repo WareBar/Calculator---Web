@@ -2,7 +2,9 @@ body{
     background: radial-gradient(circle at -4% -12.9%, rgb(74, 98, 110) 0.3%, rgb(30, 33, 48) 90.2%);
     height: 96vh;
     width: 95vw;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -13,8 +15,6 @@ body{
     height: fit-content;
     padding: 10px;
     border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 20px;
     border-style:solid;
     border-color: whitesmoke;
