@@ -52,12 +52,13 @@ function clearInput(){
 }
 
 
-let indi = 0;
+let toggled = false;
+
 
 function AppMode(){
     
     // kinapos na po dito sir lapit na po ng due date
-    if (indi % 2 === 0){
+    if (toggled === true){
         // LIGHT MODE
         document.querySelector('.calculator').style.backgroundColor = 'whitesmoke';
         document.querySelector('.expression').style.backgroundColor = 'whitesmoke';
@@ -76,3 +77,8 @@ function AppMode(){
     indi += 1;
 
 }
+
+
+let toggleBtnhaha = document.querySelector('#toggle')
+
+toggleBtnhaha.addEventListener('click', console.log('aasdf') )
