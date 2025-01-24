@@ -52,33 +52,32 @@ function clearInput(){
 }
 
 
-let toggled = false;
+// gets the toggle button
+
+let indicator = false;
+let toggleBtn = document.getElementById('toggle')
+
+toggleBtn.addEventListener("click", ()=>{
+    indicator = !indicator;
+    console.log(indicator)
 
 
-function AppMode(){
-    
-    // kinapos na po dito sir lapit na po ng due date
-    if (toggled === true){
-        // LIGHT MODE
-        document.querySelector('.calculator').style.backgroundColor = 'whitesmoke';
-        document.querySelector('.expression').style.backgroundColor = 'whitesmoke';
-        document.querySelector('.calculator').style.borderColor = 'wheat';
-        document.querySelector('#result').style.Color = 'grey';
-        document.querySelector('firstNum').style.Color = '#1B1919'
-        
+    // get the elements to change the color
+    let calculator = document.getElementById('calculator')
+    if (indicator === true){
+        calculator.style.backgroundColor = "whitesmoke";
+        console.log('white mode')
     }
 
     else{
-        document.querySelector('.calculator').style.backgroundColor = '#1B1919';
-        document.querySelector('.expression').style.backgroundColor = '#1B1919';
-        document.querySelector('.calculator').style.borderColor = 'whitesmoke';      
+        calculator.style.backgroundColor = "#1B1919";
+        console.log('dark mode')
+
     }
 
-    indi += 1;
-
-}
+})
 
 
-let toggleBtnhaha = document.querySelector('#toggle')
 
-toggleBtnhaha.addEventListener('click', console.log('aasdf') )
+console.log(toggleBtn)
+console.log('_____________^^^')
